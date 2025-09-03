@@ -52,4 +52,31 @@ print(bool(""))  # False
 print(bool(None))  # False, odpowiednik null, nic, nie ma, nie wiem
 
 # and - i
-print(True and False) # False
+print(True and False)  # False
+# Expression    Evaluates to
+# True and True    True
+# True and False    False
+# False and True    False
+# False and False    False
+
+# or - lub
+# True or True    True
+# True or False    True
+# False or True    True
+# False or False    False
+
+print(True or False)  # True
+
+# not - negacja
+print(not True)  # False
+print(not False)  # True
+
+a = 7
+b = 89
+print(f"Porównanie {a} > {b} = {a > b}")  # Porównanie 7 > 89 = False
+print(f"Porównanie {a} < {b} = {a < b}")  # Porównanie 7 < 89 = True
+print(f"Porównanie {a} >= {b} = {a >= b}")  # Porównanie 7 >= 89 = False
+print(f"Porównanie {a} <= {b} = {a <= b}")  # Porównanie 7 <= 89 = True
+print(f"Porównanie {a >= b =}")  # Porównanie a >= b =False
+print(f"Porównanie {a} == {b} = {a == b}")  # Porównanie 7 == 89 = False, porównanie, czy równe
+print(f"Porównanie {a} != {b} = {a != b}")  # Porównanie 7 != 89 = True, czy rózne?
