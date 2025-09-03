@@ -31,4 +31,25 @@ print(0.2 + 0.7)  # 0.8999999999999999
 # the sum 12.345 + 1.0001 = 13.3451 might be rounded to 13.345.
 # decimal()  - pozwala ominąc problem zaokrąglenia
 
+# typ logiczny
+# prawda, fałsz
+# True, False
+# 1, 0
 
+czy_znasz_pythona = True
+print(czy_znasz_pythona)  # True
+print(type(czy_znasz_pythona))  # <class 'bool'>, boolean, typ logiczny
+
+print(int(True))  # 1
+print(int(False))  # 0
+
+# bool() - rzutowanie na typ logiczny
+print(bool(100))  # True
+print(bool(-100))  # True
+print(bool("Radek"))  # True
+
+print(bool(""))  # False
+print(bool(None))  # False, odpowiednik null, nic, nie ma, nie wiem
+
+# and - i
+print(True and False) # False
