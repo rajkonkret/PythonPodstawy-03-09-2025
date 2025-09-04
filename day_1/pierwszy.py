@@ -72,7 +72,8 @@ print(type(name))  # <class 'str'>
 
 name = 90
 print(type(name))  # <class 'int'>
-#  pip install mypy
+#  pip install mypy - instalujemy w terminalu
+#  cd .\day_1\ - wejście do odpowiedniego katalogu
 # (.venv) PS C:\Users\CSComarch\PycharmProjects\PythonPodstawy-03-09-2025> mypy .\pierwszy.py
 # pierwszy.py:65: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
 # pierwszy.py:70: error: Name "name" already defined on line 60  [no-redef]
