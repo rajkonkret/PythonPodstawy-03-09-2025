@@ -46,18 +46,33 @@ print(dictionary)  # {'imie': 'Radek', 'wiek': 50, 'data': '31-12-2027'}
 # # Podaj imięRadek
 # # Radek
 
-# napisac aplikację kalkulator
-# pobrac dwie liczby od użytkownika
-# wyświetlić wynik obliczenia (+)
-a = int(input("Podaj pierwszą liczbę:"))  # input zwraca str
-b = input("Podaj pierwszą liczbę:")
-print(int(a) + float(b))
-print(f"{a=} + {b=} = {int(a) + float(b)}")
-print(f"{a} + {b} = {int(a) + float(b)}")  # 4 + 5 = 9.0
-# Podaj pierwszą liczbę:5
-# Podaj pierwszą liczbę:6
-# 11.0
-# Podaj pierwszą liczbę:4
-# Podaj pierwszą liczbę:5
-# 9.0
-# a=4 + b='5' = 9.0 # b jest tutaj jescze str
+# # napisac aplikację kalkulator
+# # pobrac dwie liczby od użytkownika
+# # wyświetlić wynik obliczenia (+)
+# a = int(input("Podaj pierwszą liczbę:"))  # input zwraca str
+# b = input("Podaj pierwszą liczbę:")
+# print(int(a) + float(b))
+# print(f"{a=} + {b=} = {int(a) + float(b)}")
+# print(f"{a} + {b} = {int(a) + float(b)}")  # 4 + 5 = 9.0
+# # Podaj pierwszą liczbę:5
+# # Podaj pierwszą liczbę:6
+# # 11.0
+# # Podaj pierwszą liczbę:4
+# # Podaj pierwszą liczbę:5
+# # 9.0
+# # a=4 + b='5' = 9.0 # b jest tutaj jescze str
+
+# # napiać program słownik pol-ang z wykorzystaniem słownika
+# pol_ang = {"kot": "cat", "pies": "dog", "dach": "roof"}
+# print(f"Znam słowa: {pol_ang.keys()}")  # wypisanie kluczy ze słownika, Znam słowa: dict_keys(['kot', 'pies', 'dach'])
+# odp = input("Podaj słówko do przetłumaczenia: ")
+# print(f"Tłumaczenie {pol_ang.get(odp.strip().lower(), "Nie ma")}")
+
+
+name1 = "GROSS"
+name2 = "groẞ"
+
+print(name1.lower() == name2.lower())  # False
+# """ Return a version of the string suitable for caseless comparisons. """
+print(name1.casefold() == name2.casefold())  # True
+# print(f"Tłumaczenie {pol_ang.get(odp.strip().casefold(), "Nie ma")}")
