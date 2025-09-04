@@ -40,8 +40,24 @@ print(dictionary.get('Imie', "default"))  # default, wartosc domyslna
 dictionary.update({'data': "31-12-2027"})
 print(dictionary)  # {'imie': 'Radek', 'wiek': 50, 'data': '31-12-2027'}
 
-# input() - wprowadzanie danych np.:  z kalwiatury
-tekst = input("Podaj imię")
-print(tekst)
-# Podaj imięRadek
-# Radek
+# # input() - wprowadzanie danych np.:  z kalwiatury
+# tekst = input("Podaj imię")
+# print(tekst)
+# # Podaj imięRadek
+# # Radek
+
+# napisac aplikację kalkulator
+# pobrac dwie liczby od użytkownika
+# wyświetlić wynik obliczenia (+)
+a = int(input("Podaj pierwszą liczbę:"))  # input zwraca str
+b = input("Podaj pierwszą liczbę:")
+print(int(a) + float(b))
+print(f"{a=} + {b=} = {int(a) + float(b)}")
+print(f"{a} + {b} = {int(a) + float(b)}")  # 4 + 5 = 9.0
+# Podaj pierwszą liczbę:5
+# Podaj pierwszą liczbę:6
+# 11.0
+# Podaj pierwszą liczbę:4
+# Podaj pierwszą liczbę:5
+# 9.0
+# a=4 + b='5' = 9.0 # b jest tutaj jescze str
