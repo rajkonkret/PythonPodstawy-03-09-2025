@@ -99,3 +99,50 @@ for c in lista3:
 # Za każdym przejściem pętli
 # Za każdym przejściem pętli
 
+imiona = ["Radek", "Tomek", "Zenek", "Ania"]
+print(imiona)
+print(type(imiona))  # <class 'list'>
+
+for p in imiona:  # iteracja po kolekcji, pod p zostanie podstawiony  kolejny element kolekcji
+    print(p)
+
+# Radek
+# Tomek
+# Zenek
+# Ania
+
+# 0 Radek
+for i in range(len(imiona)):
+    print(i, imiona[i])
+# 0 Radek
+# 1 Tomek
+# 2 Zenek
+# 3 Ania
+
+for p in imiona:
+    print(imiona.index(p), p)
+# 0 Radek
+# 1 Tomek
+# 2 Zenek
+# 3 Ania
+
+# enumerate() - numeruje kolekcje i zwraca numer i element kolekcji
+for i in enumerate(imiona):
+    print(i)
+# (0, 'Radek') # powstałą krotka
+# (1, 'Tomek')
+# (2, 'Zenek')
+# (3, 'Ania')
+
+for i, o in enumerate(imiona):  # i, o - rozpakowanie krotki
+    print(i, o)
+# 0 Radek
+# 1 Tomek
+# 2 Zenek
+# 3 Ania
+for i, o in enumerate(imiona, start=1):  # i, o - rozpakowanie krotki, start - rozpoczyna od tej wartości numerowac
+    print(i, o)
+# 1 Radek
+# 2 Tomek
+# 3 Zenek
+# 4 Ania
