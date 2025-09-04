@@ -146,3 +146,51 @@ for i, o in enumerate(imiona, start=1):  # i, o - rozpakowanie krotki, start - r
 # 2 Tomek
 # 3 Zenek
 # 4 Ania
+
+imiona = ["Radek", "Tomek", "Zenek", "Ania"]
+# imiona = ["Radek", "Tomek", "Zenek", "Ania", "Aga"]
+wiek = [45, 65, 34, 20]
+
+# Radek 45
+for p in imiona:
+    print(p, wiek[imiona.index(p)])
+# 3 dla różnej długości list błąd: IndexError: list index out of range
+imiona = ["Radek", "Tomek", "Zenek", "Ania", "Aga"]
+# zip() - łączenie kolekcji
+for i in zip(imiona, wiek):
+    print(i)
+# ('Radek', 45)
+# ('Tomek', 65)
+# ('Zenek', 34)
+# ('Ania', 20)
+
+# i, w = ('Ania', 20)
+for i, w in zip(imiona, wiek):
+    print(i, w)
+# Radek 45
+# Tomek 65
+# Zenek 34
+# Ania 20
+
+print(zip(imiona, wiek))  # <zip object at 0x00000181204D56C0> iterator, generator
+
+# 0 Radek 45
+for i in enumerate(zip(imiona, wiek)):
+    print(i)
+# (0, ('Radek', 45))
+# (1, ('Tomek', 65))
+# (2, ('Zenek', 34))
+# (3, ('Ania', 20))
+# i, o, w = (3, ('Ania', 20))
+a, b = (3, ('Ania', 20))
+print(a, b)  # 3 ('Ania', 20)
+c, d = ('Ania', 20)
+print(c, d)
+a, (c, d) = (3, ('Ania', 20))
+print(a, c, d)  # 3 Ania 20
+for i, (o, w) in enumerate(zip(imiona, wiek)):
+    print(i, o, w)
+# 0 Radek 45
+# 1 Tomek 65
+# 2 Zenek 34
+# 3 Ania 20
