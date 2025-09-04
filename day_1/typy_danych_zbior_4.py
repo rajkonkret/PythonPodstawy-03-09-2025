@@ -66,6 +66,7 @@ print(zbior)  # {66, 777, 11, 44, 12.34, 17, 18, 52, 22, 24, 667, 62}
 krotka = tuple(zbior)
 print(krotka)  # (66, 777, 11, 44, 12.34, 17, 18, 52, 22, 24, 667, 62)
 
+# sprawdzenie
 print(777 in zbior)  # True
 print(777 in lista)  # True
 print(777 in krotka)  # True
