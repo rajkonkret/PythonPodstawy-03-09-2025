@@ -56,3 +56,46 @@ for c in lista3:  # pobiera po kolei wszystkie eleemnty z lista3
 # 4 Rowne 4
 # 6 Większe od 4
 # 8 Większe od 4
+
+for i in range(0, 10, 2):  # start, stop, krok od 0 do 9 co 2
+    print(i)
+# 0
+# 2
+# 4
+# 6
+# 8
+
+for i in range(-10, 0):
+    print(i)
+
+# -10
+# -9
+# -8
+# -7
+# -6
+# -5
+# -4
+# -3
+# -2
+# -1
+
+for i in range(10, 0, -3):
+    print(i)
+# 10
+# 7
+# 4
+# 1
+
+for c in lista3:
+    if c == 2:
+        c += 1
+        print(c)
+    print("Za każdym przejściem pętli")
+
+# Za każdym przejściem pętli
+# 3
+# Za każdym przejściem pętli
+# Za każdym przejściem pętli
+# Za każdym przejściem pętli
+# Za każdym przejściem pętli
+
