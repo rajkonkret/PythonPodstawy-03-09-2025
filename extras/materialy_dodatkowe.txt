@@ -120,3 +120,6 @@ spam %= 1    spam = spam % 1
 pip list - lista pakietów
 pip freeze > requirements.txt - genrowanie pliku z pakietami
 pip install -r requirements.txt - instalacja z pliku
+
+# exe
+pip install pyinstaller
