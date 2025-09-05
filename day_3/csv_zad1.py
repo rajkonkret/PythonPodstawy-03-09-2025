@@ -35,3 +35,4 @@ print("Rows:", read_rows)
 # <_csv.reader object at 0x000001F02B6D2740>
 # Fields: ['name', 'branch', 'year', 'coe']
 # Rows: [['Radek', 'coe', '3', '90']]
+print(read_rows[0][0])  # Radek
